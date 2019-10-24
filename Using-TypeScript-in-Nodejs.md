@@ -207,13 +207,13 @@ yarn add shortid
 可以通过手动申明 `shortid` 类型订阅来消除错误:
 
 ```shell
+# shell command
 mkdir src/@types
 touch src/@types/shortid.d.ts
 ```
 
-shortid.d.tx
-
 ```ts
+// @src/@types/shortid.d.tx
 declare module 'shortid'
 ```
 

@@ -14,7 +14,7 @@ npm init -y
 
 ```json
 {
-  "name": "<current-folder-name></current-folder-name>",
+  "name": "<current-folder-name>",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -54,11 +54,9 @@ echo "console.log('Hello from TypeScript')" > src/index.ts
 
 ```json
 {
-  ...
   "script": {
     "build": "tsc"
   }
-  ...
 }
 ```
 
@@ -98,9 +96,7 @@ yarn add -D ts-node
 
 ```json
 "script" {
-  ...
   "start": "ts-node src/index.ts"
-  ...
 }
 ```
 
@@ -127,9 +123,7 @@ yarn add -D ts-node-dev
 
 ```json
 "script" {
-  ...
   "start": "ts-node-dev --respawn src/index.ts"
-  ...
 }
 ```
 
@@ -161,9 +155,7 @@ yarn add -D nodemon
 
 ```json
 "script" {
-  ...
   "dev": "nodemon --exec ts-node src/index.ts"
-  ...
 }
 ```
 

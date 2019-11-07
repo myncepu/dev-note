@@ -4,28 +4,7 @@
 
 ## 新建一个 Node.js 项目
 
-运行
-
-```shell
-npm init -y
-```
-
-该命令会在当前目录下创建一个 package.json 文件，文件内容为
-
-```json
-{
-  "name": "<current-folder-name></current-folder-name>",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
-}
-```
+运行 `npm init -y`， 该命令会在当前目录下创建一个 package.json 文件。
 
 ## 项目中添加 TypeScript
 
@@ -171,7 +150,7 @@ nodemon 会监控文件变化，发现文件变化之后运行 `ts-node src/inde
 
 两种方法都可以使用，具体到某些项目，有时其中一种会快些。
 
-## 使用其他 ts 和 js libraries
+## 使用其他 ts 和 js 包
 
 比如使用 express:
 
@@ -179,13 +158,13 @@ nodemon 会监控文件变化，发现文件变化之后运行 `ts-node src/inde
 yarn add express
 ```
 
-`express` 是一个 js library，幸运的是，已经有人为 `express` 写好了类型库，我们可以通过 `yarn add -D @types/express` 来安装 `express` 类型库。
+`express` 是一个 js 包，幸运的是，已经有人为 `express` 写好了类型库，我们可以通过 `yarn add -D @types/express` 来安装 `express` 类型库。
 
 ```shell
 yarn add -D @types/express
 ```
 
-还有一个非常好的 package 叫做 `@types/node`
+还有一个非常好的 包 叫做 `@types/node`
 
 ```shell
 yarn add -D @types/node
@@ -201,7 +180,7 @@ yarn add shortid
 `tsc` 报错：
 
 ```shell
-无法找到模块“short-id”的声明文件。
+无法找到模块“shortid”的声明文件。
 ```
 
 可以通过手动申明 `shortid` 类型订阅来消除错误:
